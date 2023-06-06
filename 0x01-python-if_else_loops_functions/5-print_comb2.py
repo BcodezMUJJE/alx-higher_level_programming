@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-# 5-print_comb2.py
-"""prints numbers from 0 to 99."""
-for i in range(100):
-    print('{:02d}'.format(i), end='')
-    if i != 99:
-        print(', ', end='')
+for number in range(0, 100):
+    if number == 99:
+        print("{}".format(number))
     else:
-        print()
+        print("{:02}".format(number), end=", ")
